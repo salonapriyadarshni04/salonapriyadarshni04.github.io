@@ -1,18 +1,13 @@
-let text = "B.Tech CSE Student | Future Businesswoman | App Developer 🚀";
+const text = "B.Tech CSE Student | Future Businesswoman";
 let i = 0;
 
-function typeEffect() {
+function type() {
     if (i < text.length) {
         document.getElementById("typing").innerHTML += text.charAt(i);
         i++;
-        setTimeout(typeEffect, 60);
+        setTimeout(type, 100);
     }
 }
 
-typeEffect();
-
-// Blinking cursor
-setInterval(() => {
-    let cursor = document.getElementById("cursor");
-    cursor.style.opacity = cursor.style.opacity === "0" ? "1" : "0";
-}, 500);
+// Page load hote hi typing start hogi
+window.onload = type;
