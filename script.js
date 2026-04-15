@@ -1,4 +1,5 @@
-const text = "Digital Architect | Tech Researcher | Strategic Visionary";
+// Roles that show both Tech and Business side
+const text = "Software Developer | Future Business Leader | Digital Strategist | National Athlete";
 let i = 0;
 
 function type() {
@@ -6,8 +7,9 @@ function type() {
     if (element && i < text.length) {
         element.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 80);
+        setTimeout(type, 75);
     }
 }
 
 window.onload = type;
+
