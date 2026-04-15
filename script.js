@@ -1,12 +1,12 @@
-// High-Impact Professional Roles
-const text = "Digital Strategist | National Athlete | Future Business Leader";
+const text = "Digital Architect | Tech Researcher | Strategic Visionary";
 let i = 0;
 
 function type() {
-    if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
+    const element = document.getElementById("typing");
+    if (element && i < text.length) {
+        element.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 70);
+        setTimeout(type, 80);
     }
 }
 
