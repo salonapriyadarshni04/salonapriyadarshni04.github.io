@@ -1,11 +1,12 @@
-const text = "B.Tech CSE Student | Future Businesswoman";
+// Updated Professional Text
+const text = "Full Stack Developer | AI Enthusiast | Future Businesswoman";
 let i = 0;
 
 function type() {
     if (i < text.length) {
         document.getElementById("typing").innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 100);
+        setTimeout(type, 80); // Thoda fast typing
     }
 }
 
