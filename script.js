@@ -1,12 +1,12 @@
-// Isme Researcher wala role add kar diya hai
-const text = "Full-Stack Developer | Tech Researcher | Future Businesswoman";
+// Aise roles jo dekhne wale ko impress kar dein
+const text = "Digital Architect | Tech Researcher | Strategic Visionary";
 let i = 0;
 
 function type() {
     if (i < text.length) {
         document.getElementById("typing").innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 70);
+        setTimeout(type, 75);
     }
 }
 
