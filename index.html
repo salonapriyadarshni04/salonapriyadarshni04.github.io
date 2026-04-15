@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salona Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 45px;
+        }
+
+        #typing {
+            color: #00ffcc;
+            font-size: 22px;
+        }
+
+        #cursor {
+            font-size: 22px;
+            color: #00ffcc;
+        }
+
+        .section {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background: #00ffcc;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Salona Priyadarshni</h1>
+
+<p id="typing"></p><span id="cursor">|</span>
+
+<div class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a B.Tech CSE student at Manav Rachna International Institute of Research and Studies.
+        I am currently in my first year and have started my programming journey with C language.
+        I am passionate about building applications and my goal is to become a successful businesswoman
+        and create impactful digital solutions in the future.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Skills</h2>
+    <p>C Programming (Beginner)</p>
+    <p>Learning Python & App Development</p>
+</div>
+
+<div class="section">
+    <h2>Projects</h2>
+    <p>✔ Portfolio Website (This Website)</p>
+    <p>✔ Tableau Dashboard (Coming Soon)</p>
+    <p>✔ Notes App (Upcoming Project)</p>
+</div>
+
+<button onclick="alert('Contact feature coming soon 😎')">Hire Me</button>
+
+<script>
+let text = "B.Tech CSE Student | Future Businesswoman | App Developer 🚀";
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 70);
+    }
+}
+
+typeEffect();
+
+// Cursor blink
+setInterval(() => {
+    let cursor = document.getElementById("cursor");
+    cursor.style.opacity = cursor.style.opacity === "0" ? "1" : "0";
+}, 500);
+</script>
+
+</body>
+</html>
