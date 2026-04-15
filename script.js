@@ -1,4 +1,3 @@
-// Roles that show both Tech and Business side
 const text = "Software Developer | Future Business Leader | Digital Strategist | National Athlete";
 let i = 0;
 
