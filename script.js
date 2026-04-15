@@ -1,5 +1,5 @@
-// Polite aur balanced roles
-const text = "Tech Explorer | Management Enthusiast | Future Businesswoman";
+// High-Impact Professional Roles
+const text = "Digital Strategist | National Athlete | Future Business Leader";
 let i = 0;
 
 function type() {
