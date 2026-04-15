@@ -4,50 +4,6 @@
     <title>Salona Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            margin: 0;
-            background: black;
-            color: white;
-            font-family: Arial;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 100px;
-            font-size: 45px;
-        }
-
-        #typing {
-            color: #00ffcc;
-            font-size: 22px;
-        }
-
-        #cursor {
-            font-size: 22px;
-            color: #00ffcc;
-        }
-
-        .section {
-            margin-top: 60px;
-            padding: 20px;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 12px 25px;
-            font-size: 16px;
-            background: #00ffcc;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background: white;
-            color: black;
-        }
-    </style>
 </head>
 
 <body>
@@ -81,26 +37,7 @@
 
 <button onclick="alert('Contact feature coming soon 😎')">Hire Me</button>
 
-<script>
-let text = "B.Tech CSE Student | Future Businesswoman | App Developer 🚀";
-let i = 0;
-
-function typeEffect() {
-    if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 70);
-    }
-}
-
-typeEffect();
-
-// Cursor blink
-setInterval(() => {
-    let cursor = document.getElementById("cursor");
-    cursor.style.opacity = cursor.style.opacity === "0" ? "1" : "0";
-}, 500);
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
