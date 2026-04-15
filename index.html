@@ -5,59 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salona Priyadarshni | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <img src="salona.jpg" alt="Salona" style="width:160px; height:160px; border-radius:50%; border:4px solid #58a6ff; margin-bottom:20px; object-fit: cover; box-shadow: 0 0 20px rgba(88, 166, 255, 0.4);">
-
-    <h1>Salona Priyadarshni</h1>
-    
-    <div id="typing-container">
-        <span id="typing"></span><span id="cursor">|</span>
-    </div>
-
-    <div class="badge-container">
-        <img src="https://img.shields.io/badge/B.Tech-CSE-blue?style=for-the-badge&logo=computer-science&logoColor=white" alt="BTech">
-        <img src="https://img.shields.io/badge/MRIIRS-University-orange?style=for-the-badge" alt="College">
-        <img src="https://img.shields.io/badge/Goal-Businesswoman-success?style=for-the-badge" alt="Goal">
-    </div>
-
-    <div class="badge-container">
-        <button onclick="window.location.href='mailto:salonapriyadarshni0412@gmail.com'">Hire Me</button>
-        <a href="https://www.linkedin.com/in/salona-priyadarshni-78a160378" target="_blank">
-            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/imsalona.04" target="_blank">
-            <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-        </a>
-    </div>
-
-    <div class="section">
-        <h2>🚀 About Me</h2>
-        <p>I am a Computer Science Engineering student at <b>MRIIRS</b>, passionate about software development and the future of Artificial Intelligence. I aim to leverage my technical expertise to create impactful digital solutions and lead innovative business ventures as a tech-driven businesswoman.</p>
-    </div>
-
-    <div class="section">
-        <h2>🛠️ Tech Stack & Skills</h2>
-        <div class="skill-container">
-            <span class="skill-badge">Software Development</span>
-            <span class="skill-badge">AI & Machine Learning (Learning)</span>
-            <span class="skill-badge">Python</span>
-            <span class="skill-badge">C Programming</span>
-            <span class="skill-badge">HTML5 & CSS3</span>
-            <span class="skill-badge">JavaScript</span>
-            <span class="skill-badge">UI/UX Design</span>
-            <span class="skill-badge">Entrepreneurship</span>
+    <header>
+        <img src="salona.jpg" alt="Salona" class="profile-img">
+        <h1>Salona Priyadarshni</h1>
+        <div id="typing-container">
+            <span id="typing"></span><span id="cursor">|</span>
         </div>
-    </div>
-
-    <div class="section">
-        <h2>📈 GitHub Statistics</h2>
-        <div style="display: flex; flex-direction: column; gap: 15px;">
-            <img src="https://github-readme-stats.vercel.app/api?username=Salonapriyadarshni04&show_icons=true&theme=dark&hide_border=true&title_color=58a6ff&icon_color=00ffcc" width="100%" alt="Stats">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Salonapriyadarshni04&layout=compact&theme=dark&hide_border=true&title_color=58a6ff" width="100%" alt="Languages">
+        
+        <div class="badge-container">
+            <img src="https://img.shields.io/badge/B.Tech-CSE-blue?style=for-the-badge&logo=computer-science&logoColor=white">
+            <img src="https://img.shields.io/badge/MRIIRS-University-orange?style=for-the-badge">
         </div>
-    </div>
+
+        <div class="social-links">
+            <button class="resume-btn" onclick="window.open('resume.pdf', '_blank')">
+                <i class="fas fa-file-pdf"></i> Resume
+            </button>
+            <a href="https://www.linkedin.com/in/salona-priyadarshni-78a160378" target="_blank" class="social-icon li"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/imsalona.04" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>Computer Science Engineering student at <b>MRIIRS</b>. Passionate about Software Development, AI, and Tech-Entrepreneurship. I love solving complex problems with clean code.</p>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-code"></i> Featured Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>C-Programming Lab</h3>
+                    <p>Structured Lab Record containing 19+ advanced programming solutions and algorithms.</p>
+                    <div class="tags"><span>C Language</span> <span>Logic</span></div>
+                </div>
+                <div class="card">
+                    <h3>Professional Portfolio</h3>
+                    <p>This website! Built using modern HTML, CSS, and JS to showcase my digital identity.</p>
+                    <div class="tags"><span>Web Dev</span> <span>GitHub</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <div class="cert-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h4>Python for Data Science</h4>
+                    <p>Currently Learning - Focus on AI & Automation</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h4>MRIIRS Tech Workshop</h4>
+                    <p>Certificate of Participation in Innovation & Emerging Tech</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><i class="fab fa-github"></i> GitHub Activity</h2>
+            <div class="stats">
+                <img src="https://github-readme-stats.vercel.app/api?username=Salonapriyadarshni04&show_icons=true&theme=dark&hide_border=true&title_color=58a6ff" width="100%">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Salonapriyadarshni04&layout=compact&theme=dark&hide_border=true&title_color=58a6ff" width="100%">
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
