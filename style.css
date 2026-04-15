@@ -1,102 +1,76 @@
+:root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --border: #30363d;
+    --accent: #58a6ff;
+    --text: #c9d1d9;
+}
+
 body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #0d1117; /* GitHub Dark Theme */
-    color: #c9d1d9;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 20px;
+    padding: 40px 15px;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #58a6ff;
-    margin-bottom: 5px;
-    font-weight: 600;
+header { text-align: center; margin-bottom: 30px; }
+
+.profile-img {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
 }
 
-#typing-container {
-    font-size: 1.4rem;
-    margin-bottom: 25px;
-    color: #ffffff;
+h1 { color: #f0f6fc; margin: 15px 0 5px; }
+
+#typing-container { color: var(--accent); font-weight: bold; margin-bottom: 20px; }
+
+.badge-container { display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; }
+
+.social-links { display: flex; gap: 15px; align-items: center; justify-content: center; }
+
+.resume-btn {
+    background: #238636; color: white; border: none;
+    padding: 8px 18px; border-radius: 6px; font-weight: bold; cursor: pointer;
 }
 
-#cursor { color: #58a6ff; font-weight: bold; }
-
-.badge-container {
-    margin: 10px 0;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+.social-icon { font-size: 1.5rem; color: var(--text); transition: 0.3s; }
+.social-icon.li:hover { color: #0077b5; }
+.social-icon.ig:hover { color: #e4405f; }
 
 .section {
-    width: 100%;
-    max-width: 800px;
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 20px;
-    text-align: left;
-    transition: 0.3s;
+    width: 100%; max-width: 700px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 25px; border-radius: 12px; margin-bottom: 20px;
 }
 
-.section:hover {
-    border-color: #58a6ff;
+h2 { font-size: 1.2rem; color: #f0f6fc; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 0; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
+
+.card {
+    background: #21262d; padding: 15px; border-radius: 8px; border: 1px solid var(--border);
 }
 
-h2 {
-    font-size: 1.3rem;
-    border-bottom: 1px solid #30363d;
-    padding-bottom: 12px;
-    color: #f0f6fc;
-    margin-top: 0;
+.card h3 { margin: 0 0 10px; font-size: 1rem; color: var(--accent); }
+
+.tags span {
+    background: #388bfd26; color: var(--accent);
+    font-size: 0.7rem; padding: 3px 8px; border-radius: 10px; margin-right: 5px;
 }
 
-.skill-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
+.cert-item { display: flex; gap: 15px; margin-top: 15px; align-items: center; }
+.cert-item i { color: #f1e05a; font-size: 1.2rem; }
+.cert-item h4 { margin: 0; color: #f0f6fc; }
+.cert-item p { margin: 2px 0 0; font-size: 0.85rem; color: #8b949e; }
 
-.skill-badge {
-    background: #21262d;
-    border: 1px solid #30363d;
-    padding: 8px 16px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    color: #8b949e;
-    font-weight: 500;
-}
+.stats img { margin-top: 15px; border-radius: 8px; }
 
-button {
-    background-color: #238636;
-    color: white;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-button:hover {
-    background-color: #2ea043;
-    transform: translateY(-2px);
-}
-
-p {
-    line-height: 1.6;
-    color: #8b949e;
-    font-size: 1.05rem;
-}
-
-a { text-decoration: none; transition: 0.2s; }
-a:hover { opacity: 0.8; }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
