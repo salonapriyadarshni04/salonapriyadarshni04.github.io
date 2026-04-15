@@ -11,4 +11,3 @@ function type() {
 }
 
 window.onload = type;
-
