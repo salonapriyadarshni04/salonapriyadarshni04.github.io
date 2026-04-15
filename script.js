@@ -1,12 +1,12 @@
-// Aise roles jo dekhne wale ko impress kar dein
-const text = "Digital Architect | Tech Researcher | Strategic Visionary";
+// Polite aur balanced roles
+const text = "Tech Explorer | Management Enthusiast | Future Businesswoman";
 let i = 0;
 
 function type() {
     if (i < text.length) {
         document.getElementById("typing").innerHTML += text.charAt(i);
         i++;
-        setTimeout(type, 75);
+        setTimeout(type, 70);
     }
 }
 
